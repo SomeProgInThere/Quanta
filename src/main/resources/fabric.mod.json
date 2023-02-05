@@ -5,7 +5,7 @@
 	"name": "Quanta",
 	"description": "Size doesn't matter! (mostly)",
 	"authors": [
-		"Me!"
+		"SomeProgInThere"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -19,7 +19,7 @@
 			"someprog.quanta.Quanta"
 		],
 		"fabric-datagen": [
-			"someprog.quanta.QuantaDataGenerator"
+			"someprog.quanta.datagen.QuantaDataGeneration"
 		]
 	},
 	"mixins": [

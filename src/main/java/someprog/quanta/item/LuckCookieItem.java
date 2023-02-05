@@ -21,14 +21,15 @@ public class LuckCookieItem extends Item {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        user.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, 600));
-        user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 400, 1));
+        user.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, 1000));
+        user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 300));
+        user.addStatusEffect(new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, 300));
         return super.finishUsing(stack, world, user);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("Gives you luck! (and sugar crush) ;)").formatted(Formatting.LIGHT_PURPLE));
+        tooltip.add(Text.translatable("tooltip.luck_cookie").formatted(Formatting.LIGHT_PURPLE));
         super.appendTooltip(stack, world, tooltip, context);
     }    
 }
