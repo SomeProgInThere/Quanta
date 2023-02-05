@@ -2,7 +2,7 @@ package someprog.quanta;
 
 import net.fabricmc.api.ModInitializer;
 import someprog.quanta.item.ItemGroups;
-import someprog.quanta.item.Items;
+import someprog.quanta.item.QItems;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +15,6 @@ public class Quanta implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ItemGroups.registerItemGroups();
-		Items.registerItems();
+		QItems.registerItems();
 	}
 }

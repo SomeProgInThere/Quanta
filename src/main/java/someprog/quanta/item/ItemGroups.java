@@ -15,6 +15,6 @@ public class ItemGroups {
         
         QUANTA = FabricItemGroup.builder(new Identifier(Quanta.MOD_ID, "quanta"))
                 .displayName(Text.translatable("itemGroup.quanta"))
-                .icon(() -> new ItemStack(Items.LUCK_COOKIE)).build();
+                .icon(() -> new ItemStack(QItems.LUCK_COOKIE)).build();
     }
 }
